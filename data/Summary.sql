@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS Summary;
+CREATE DATABASE Summary;
+USE Summary;
+
+DROP TABLE IF EXISTS balance;
+CREATE TABLE balance(
+  balanceID INT NOT NULL PRIMARY KEY UNIQUE,
+  balaceName VARCHAR(30) NOT NULL,
+  total FLOAT Default "0.00",
+  details VARCHAR(100)  
+); 
+
+DROP TABLE IF EXISTS userName;
+CREATE TABLE userName(
+  userID INT NOT NULL PRIMARY KEY UNIQUE,
+  userName VARCHAR(15) NOT NULL,
+  userType VARCHAR(15) NOT NULL,
+  verification VARCHAR(50) NOT NULL
+); 
+
