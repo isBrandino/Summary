@@ -13,6 +13,9 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)nunit/3.12.0/build/NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit/3.12.0/build/NUnit.props')" />
+    <Import Project="$(NuGetPackageRoot)xunit.core/2.4.1/build/xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core/2.4.1/build/xunit.core.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/home/brandino/.nuget/packages/xunit.analyzers/0.10.0</Pkgxunit_analyzers>
+  </PropertyGroup>
 </Project>

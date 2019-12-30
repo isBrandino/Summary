@@ -28,5 +28,11 @@ class Login{
     public bool signUp(Boolean valid){
       return valid;
     }
+
+
+    private void signIn(String username, String password){
+      this.username = username;
+      this.password = password;
+    }
   }
 }
