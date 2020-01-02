@@ -22,6 +22,9 @@ class Login{
         signUp(true);
       }else{
         signUp(false);
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Passwords do not match");
+        Console.ResetColor();
       }
     }
 

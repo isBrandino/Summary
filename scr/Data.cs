@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 
+//https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments#optional-arguments
+//use optional arguments 
 namespace Summary{    
     class Data{  
         public decimal Amount { get; }

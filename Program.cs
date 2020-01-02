@@ -12,7 +12,6 @@ namespace Summary
             Console.WriteLine(center("Welcome to Summary"));
             Console.ResetColor();
             Menu Summary = new Menu();
-            Test Result = new Test();
         }
         //centers text in the terminal
         public static string center(String input)
