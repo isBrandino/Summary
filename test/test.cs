@@ -6,7 +6,15 @@ namespace Summary
  //test classes must be public
     class Test
     {   
-         Menu Summary = new Menu();	
+    Login login = new Login();
+    Data data = new Data();
+	Menu menu = new Menu();
+
+		// [Fact]
+		// public void DataIsAdded()
+ 		// {
+		// 	 data.add();
+    	// }  
 /*	
     [Fact]
 	public void Menu_has_input()
