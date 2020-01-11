@@ -8,26 +8,6 @@ namespace Summary
     {   
     Login login = new Login();
     Data data = new Data();
-	Menu menu = new Menu();
-
-		// [Fact]
-		// public void DataIsAdded()
- 		// {
-		// 	 data.add();
-    	// }  
-/*	
-    [Fact]
-	public void Menu_has_input()
- 	{
-		
-    }  
-
-	[Fact]
-	public void Menu_reads_input()
-	{
-		Assert.Equal("Hello, World!", HelloWorld.Hello());
-   	}
-*/    
-    
+    Menu menu = new Menu(); 
     }
 }
