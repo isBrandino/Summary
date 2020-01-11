@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary.Test/Summary.Test.csproj": {}
+  },
+  "projects": {
+    "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary.Test/Summary.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary.Test/Summary.Test.csproj",
+        "projectName": "Summary.Test",
+        "projectPath": "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary.Test/Summary.Test.csproj",
+        "packagesPath": "/home/brandino/.nuget/packages/",
+        "outputPath": "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/brandino/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary/Summary.csproj": {
+                "projectPath": "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary/Summary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary/Summary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary/Summary.csproj",
+        "projectName": "Summary",
+        "projectPath": "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary/Summary.csproj",
+        "packagesPath": "/home/brandino/.nuget/packages/",
+        "outputPath": "/home/brandino/Documents/Code/CSharp/Projects/Summary/Summary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/brandino/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
