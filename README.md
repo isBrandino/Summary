@@ -1,5 +1,5 @@
 <h1 align="center">Summary</h1>
-
+<p> .net core 3.0 </p>
 ## build</p>
 ```cd Summary ``` 
 
