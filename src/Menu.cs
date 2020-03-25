@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
 namespace Summary
@@ -10,12 +11,20 @@ namespace Summary
         Login login = new Login();
         Data data = new Data();
         Db dbSql = new Db();
+        //Array[] temp = new Array[]();
         int index;
-        List<string> options = new List<string>() { "[Z: User Login][C: Create A Account][X: Guest Login]", "[Z: account][C: display][X: layout]", "[D: add][E : edit][C: count][F: list]" };
+        int exitConsole = 0;
+        List<string> options = new List<string>() { "[Z: User Login][C: Create A Account][X: Guest Login][Q: exit]", "[Z: account][C: display][X: layout]", "[D: add][E : edit][C: count][F: list][Q: exit]" };
         public Menu()
         {
+            dbSql.sqlConnect();
             option();
             main();
+        }
+        //fix me :)
+        private async Task<ConsoleKeyInfo> GetInputAsync()
+        {
+            return await Task.Run(() => Console.ReadKey(false));
         }
         public static string center(String input)
         {
@@ -23,14 +32,16 @@ namespace Summary
             return input;
         }
 
-
         //main input menu
         public void main()
         {
             Console.Write("> ");
             ConsoleKeyInfo keyInMain = Console.ReadKey(false);
+            //try making input ascychous 
+            //Console.keyInMain = GetInputAsync();
+
             switch (keyInMain.KeyChar.ToString())
-	{
+            {
                 case "z":
                     Console.Clear();
                     Console.WriteLine("\n[Z: User Login]");
@@ -42,11 +53,19 @@ namespace Summary
                 case "x":
                     Console.Clear();
                     Console.WriteLine("\n[X: Guest Login]");
-                    option(2);
-                    home();
+                        option(2);
+                        home();
+                    break;
+                case "q":
+                    Console.WriteLine("\n[Exiting]");
+                        Environment.Exit(0);
                     break;
                 default:
+                    exitConsole++;
                     Console.Write("\t" + "[input not valid]" + "\n");
+                    if(exitConsole >= 20){
+                        Environment.Exit(0);
+                    }
                     main();
                     break;
             }
@@ -71,28 +90,36 @@ namespace Summary
             ConsoleKeyInfo keyInHome = Console.ReadKey(false);
             switch (keyInHome.KeyChar.ToString())
             {
-               case "d":
-                    Console.Clear();
+                case "d":
                     Console.WriteLine("\n[D: add]");
-                    data.add();
-		            Console.WriteLine("\n");
-                    home();
-                    break;
-               case "e":
+                    //data entry method
+                        data.add();
                     Console.Clear();
+                        option(2);
+                    //add temp storage display of added entries make is get info from data class
+                        home();
+                    break;
+                case "e":
                     Console.WriteLine("\n[E : edit]");
                     break;
                 case "c":
                     Console.WriteLine("\n[C: count]");
-                    option(2);
+                        option(2);
                     break;
-               case "f":
-                    Console.Clear();
+                case "f":
                     Console.WriteLine("\n[F: list]");
                     break;
+                case "q":
+                  Console.WriteLine("\n[Exiting]");
+                    Environment.Exit(0);
+                    break;
                 default:
+                    exitConsole++;
                     Console.Write("\t" + "[input not valid]" + "\n");
-                    main();
+                    if(exitConsole >= 20){
+                        Environment.Exit(0);
+                    }
+                    home();
                     break;
             }
             if (keyInHome.Key == ConsoleKey.Escape)

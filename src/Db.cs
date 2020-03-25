@@ -10,13 +10,13 @@ namespace Summary
         //sets unquire value for each input
         public Db()
         {
-            sqlConnect();
+            
         }
         //create a login and entry database 
         //store name amount and date
         //connection to sqllite   
         //https://stackoverflow.com/questions/35374697/how-to-properly-make-asynchronous-parallel-database-calls
-        public static void sqlConnect()
+        public void sqlConnect()
         {
             string cs = "Data Source=:memory:";
             string stm = "SELECT SQLITE_VERSION()";
