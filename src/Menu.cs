@@ -45,10 +45,12 @@ namespace Summary
                 case "z":
                     Console.Clear();
                     Console.WriteLine("\n[Z: User Login]");
+                    login.signIn();
                     break;
                 case "c":
                     Console.Clear();
                     Console.WriteLine("\n[C: Create A Account]");
+                    login.signUp();
                     break;
                 case "x":
                     Console.Clear();

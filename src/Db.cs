@@ -7,11 +7,12 @@ namespace Summary
 {
     class Db
     {
-        //sets unquire value for each input
+        SQLiteConnection con;
         public Db()
         {
             
         }
+
         //create a login and entry database 
         //store name amount and date
         //connection to sqllite   
@@ -26,5 +27,29 @@ namespace Summary
             string version = cmd.ExecuteScalar().ToString();
             Console.WriteLine($"SQLite version: {version}");
         }
+
+        private void key(){
+
+        }
+
+        private void login(){
+
+        }
+
+        private void push(){
+
+        }
+
+        private void pop(){
+
+        }
+
+        private void sort(){
+        
+        }
+        private void search(){
+
+        }
+
     }
 }

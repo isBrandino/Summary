@@ -1,8 +1,7 @@
 <h1 align="center">Summary</h1>
-<p> .net core 3.0 </p>
+<p> Dot Net core 3.1 </p>
 ## build</p>
 ```cd Summary ``` 
-
 ```dotnet build```
 
 ## Test
@@ -10,5 +9,5 @@
 
 ```dotnet test```
 
-## Or run script
+## or run script
 ```bash test.sh```

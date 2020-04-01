@@ -24,20 +24,23 @@ namespace Summary
         }
 
         //add validation methods here
-        public string add(String Name = "Guest", double Amount = 0.00, string Details = "")
+        public void add()
         {
             Console.Write("[Balance Name/Type] > ");
             Name = Console.ReadLine();
-            Amount = voidSetAmount(Amount);
-                Console.Write("[Details] > ");
-            Details = Console.ReadLine();
-                Console.WriteLine($"Added: {Amount} to {Name}," + "\n" + $"{Details}" + " on " + dateInput());
 
+            Amount = voidSetAmount(Amount);
+            
+            Console.Write("[Details] > ");
+            Details = Console.ReadLine();
+            
+            Console.WriteLine($"Added: {Amount} to {Name}," + "\n" + $"{Details}" + " on " + dateInput());
             //pass data to database && list        
-            loginData(Name,Convert.ToDouble(Amount),Date,Details);
-            return ($"The total for {Name}, is: ${Amount}" + "/n" + $"{Details}" + $"{Date}");
+            loginData(Name,Convert.ToDouble(Amount),Date, Details);
+            //return ($"The total for {Name}, is: ${Amount}" + "/n" + $"{Details}" + $"{Date}");
         }
-            public double voidSetAmount(double Amount){
+        
+        public double voidSetAmount(double Amount){
             	Console.Write("[Amount] > ");
             if (!double.TryParse(Console.ReadLine(), out Amount))
             {
@@ -47,7 +50,7 @@ namespace Summary
             return Amount;
         }
 
-    	//validate so user has to enter a number(or string)
+    	//error when no data is entered
         public DateTime dateInput(){
            Console.Write("Enter a day: > ");
                 int day = int.Parse(Console.ReadLine());
@@ -59,8 +62,8 @@ namespace Summary
                 int year = int.Parse(Console.ReadLine());
 
             bool valid = verify.dateTimeValidate(year, month, day);
-                  if(valid  == true){
-                  Date = new DateTime(year, month, day);
+            if(valid  == true){
+                Date = new DateTime(year, month, day);
                 return Date;
              }else{
                 Console.WriteLine("Invalid Date! Please Try Again");
@@ -75,11 +78,12 @@ namespace Summary
         //add test methods here
         public void loginData(String name, double amount, DateTime date, string details)
         {
-            Console.WriteLine("logindata = " +$"{name} {amount} {date} {details}");
+            
             this.Name = name;
             this.Amount = amount;
             this.Date = date;
             this.Details = Details;
+            Console.WriteLine("\nlogindata = " +$"{Name} {Amount} {Date} {Details}");
             //write method to pass data to database here
             
         }
