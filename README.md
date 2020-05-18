@@ -1,5 +1,6 @@
 <h1 align="center">Summary</h1>
-<p> Dot Net core 3.1 </p>
+<p>Summary is a console applicaiton for saving asset infomation. Build with C# and .Net Core</p>
+
 ## build</p>
 ```cd Summary ``` 
 ```dotnet build```

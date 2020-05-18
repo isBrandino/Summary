@@ -1,0 +1,23 @@
+use a flow chart to plan app
+added input values should be able to be edited but also shown to the user
+values should have a way to be listed and sorted
+delete option should show list and allows users to delete items
+
+
+write test case first before writing code
+
+1. list temp storage 
+
+2. login validation
+ 
+3. account ids
+
+4. entry listing
+
+5. entry storing
+
+6. edit / delete functionality
+
+> > 7. initail release
+
+8. Async input

@@ -1,8 +1,11 @@
 ﻿using System;
 using Summary;
 namespace Summary
+/* 
+ * Summary is a console application to Store Asset & Income Infomation 
+ * @author Brandon Dawson
+ */
 {
-    /* Summary is a website to Manage and list Income Infomation*/
     class Program
     {
         static void Main(string[] args)
@@ -13,7 +16,7 @@ namespace Summary
             Menu Summary = new Menu();
         }
         //centers text in the terminal
-        public static string center(String input)
+        private static string center(String input)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition((Console.WindowWidth - input.Length) / 2, Console.CursorTop);
