@@ -6,17 +6,13 @@ delete option should show list and allows users to delete items
 
 write test case first before writing code
 
-1. list temp storage 
+1. List entries
 
-2. login validation
- 
-3. account ids
+2. edit / delete functionality
 
-4. entry listing
+4. Complate login functionality
 
-5. entry storing
-
-6. edit / delete functionality
+5. Modify database schema
 
 > > 7. initail release
 

@@ -89,3 +89,7 @@
 /home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/runtimes/osx-x64/native/netstandard2.0/SQLite.Interop.dll
 /home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/runtimes/win-x64/native/netstandard2.0/SQLite.Interop.dll
 /home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/runtimes/win-x86/native/netstandard2.0/SQLite.Interop.dll
+/home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.Apple.dylib
+/home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.OpenSsl.dylib
+/home/brandino/Documents/Code/CSharp/Projects/Summary/obj/Debug/netcoreapp3.0/Summary.csproj.CoreCompileInputs.cache
+/home/brandino/Documents/Code/CSharp/Projects/Summary/obj/Debug/netcoreapp3.0/Summary.genruntimeconfig.cache
