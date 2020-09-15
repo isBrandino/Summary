@@ -89,6 +89,7 @@ namespace Summary
 
             }
 
+            //list query data 
             public void ListData(string addQry)
             {
                 var count = 0;
@@ -98,25 +99,25 @@ namespace Summary
                     con.Open();
                     using (var cmd = new SQLiteCommand(addQry, con))
                     {
-                        using SQLiteDataReader readit = cmd.ExecuteReader();
+                        using SQLiteDataReader readReader = cmd.ExecuteReader();
 
-                        while (readit.HasRows)
+                        while (readReader.HasRows)
                         {
                             var header = ("{0}\t{1}\t{2}\t{3}",
                             name: "[name] ", total: "[total] ", date: "[date] ", info: "[info] ");
 
-                            while (readit.Read())
+                            while (readReader.Read())
                             {
                                 count++;
-                                var readDate = (readit.GetInt32(4) + "/" + readit.GetInt32(5) + "/" + readit.GetInt32(6));
+                                var readDate = (readReader.GetInt32(4) + "/" + readReader.GetInt32(5) + "/" + readReader.GetInt32(6));
                                 Console.ResetColor();
                                 Console.WriteLine(count+".");
                                 Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine("{0}\n{1}\n{2}\n{3}\n",
-                                  header.name + readit.GetString(1),
-                                  header.total + readit.GetInt32(2),
+                                  header.name + readReader.GetString(1),
+                                  header.total + readReader.GetInt32(2),
                                   header.date + readDate,
-                                  header.info + readit.GetString(3));
+                                  header.info + readReader.GetString(3));
                             }
                             Console.ResetColor();
                         }

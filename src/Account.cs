@@ -8,11 +8,6 @@ namespace Summary
     {
         Query query = new Query();
         Validate verify = new Validate();
-
-        //use dictionary structure to store login
-        //use hash map store id to database
-        //private Dictionary<string, Login> credentail = BuildDictonary();
-    
         private Data data;
         private bool verfied;
         private string Password { get; set; }

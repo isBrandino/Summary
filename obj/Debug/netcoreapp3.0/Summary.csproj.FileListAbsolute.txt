@@ -93,3 +93,7 @@
 /home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.OpenSsl.dylib
 /home/brandino/Documents/Code/CSharp/Projects/Summary/obj/Debug/netcoreapp3.0/Summary.csproj.CoreCompileInputs.cache
 /home/brandino/Documents/Code/CSharp/Projects/Summary/obj/Debug/netcoreapp3.0/Summary.genruntimeconfig.cache
+/home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/xunit.abstractions.dll
+/home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/xunit.core.dll
+/home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/xunit.execution.dotnet.dll
+/home/brandino/Documents/Code/CSharp/Projects/Summary/bin/Debug/netcoreapp3.0/xunit.assert.dll

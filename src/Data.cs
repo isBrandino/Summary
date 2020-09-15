@@ -13,9 +13,6 @@ namespace Summary
             Console.ForegroundColor = ConsoleColor.Green;
             return input;
         }
-        //use dictionary structure to store data
-        //use dictionary structure to store dates
-        //hash map search with key(ID)
         public DateTime Date { get; set; }
         public double Amount { get; set; }
         public string Details { get; set; }
@@ -98,8 +95,8 @@ namespace Summary
             }
             return Date;
         }
-
-        //add test methods here
+        
+        //creates a query to add data
         public void AddData(String name, double amount, DateTime date, string details)
         {
             this.Name = name;

@@ -16,7 +16,7 @@ namespace Summary
             Menu Summary = new Menu();
         }
         //centers text in the terminal
-        private static string center(String input)
+        public static string center(String input)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition((Console.WindowWidth - input.Length) / 2, Console.CursorTop);
